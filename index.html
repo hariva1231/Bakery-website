@@ -1,1 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Delight Bakery</title>
 
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, sans-serif;
+        }
+
+        body{
+            background:#fff8f0;
+            color:#333;
+        }
+
+        header{
+            background:#8B4513;
+            color:white;
+            padding:20px;
+            text-align:center;
+        }
+
+        nav{
+            background:#d2691e;
+            text-align:center;
+            padding:12px;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin:0 15px;
+            font-weight:bold;
+        }
+
+        nav a:hover{
+            color:yellow;
+        }
+
+        .hero{
+            background:url('https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1400&q=80') no-repeat center;
+            background-size:cover;
+            height:400px;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            color:white;
+            text-align:center;
+        }
+
+        .hero h2{
+            font-size:45px;
+            background:rgba(0,0,0,0.5);
+            padding:20px;
+            border-radius:10px;
+        }
+
+        section{
+            padding:50px 10%;
+        }
+
+        h2{
+            text-align:center;
+            margin-bottom:30px;
+            color:#8B4513;
+        }
+
+        .products{
+            display:flex;
+            justify-content:space-around;
+            flex-wrap:wrap;
+            gap:20px;
+        }
+
+        .card{
+            background:white;
+            width:280px;
+            border-radius:10px;
+            box-shadow:0 4px 10px rgba(0,0,0,0.2);
+            overflow:hidden;
+            text-align:center;
+        }
+
+        .card img{
+            width:100%;
+            height:220px;
+            object-fit:cover;
+        }
+
+        .card h3{
+            margin:15px 0;
+        }
+
+        .card p{
+            padding:0 15px 20px;
+        }
+
+        .btn{
+            display:inline-block;
+            margin-bottom:20px;
+            padding:10px 20px;
+            background:#8B4513;
+            color:white;
+            text-decoration:none;
+            border-radius:5px;
+        }
+
+        .btn:hover{
+            background:#d2691e;
+        }
+
+        footer{
+            background:#8B4513;
+            color:white;
+            text-align:center;
+            padding:20px;
+        }
+
+        @media(max-width:768px){
+            .products{
+                flex-direction:column;
+                align-items:center;
+            }
+
+            .hero h2{
+                font-size:30px;
+            }
+        }
+    </style>
+
+</head>
+<body>
+
+<header>
+    <h1>🍞 Sweet Delight Bakery</h1>
+    <p>Freshly Baked Every Day</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#about">About</a>
+    <a href="#menu">Menu</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<div class="hero">
+    <h2>Fresh Bread, Cakes & Pastries</h2>
+</div>
+
+<section id="about">
+    <h2>About Us</h2>
+    <p style="text-align:center;">
+        Welcome to Sweet Delight Bakery! We prepare fresh cakes,
+        breads, cookies, pastries, and desserts using premium
+        ingredients. Every bite is baked with love.
+    </p>
+</section>
+
+<section id="menu">
+    <h2>Our Best Sellers</h2>
+
+    <div class="products">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=600&q=80">
+            <h3>Chocolate Cake</h3>
+            <p>Rich chocolate cake made with premium cocoa.</p>
+            <a href="#" class="btn">Order Now</a>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?auto=format&fit=crop&w=600&q=80">
+            <h3>Fresh Bread</h3>
+            <p>Soft, freshly baked bread every morning.</p>
+            <a href="#" class="btn">Order Now</a>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=600&q=80">
+            <h3>Butter Croissant</h3>
+            <p>Flaky and buttery croissants baked daily.</p>
+            <a href="#" class="btn">Order Now</a>
+        </div>
+
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+
+    <p style="text-align:center;">
+        📍 123 Bakery Street, Hyderabad<br><br>
+        📞 +91 98765 43210<br><br>
+        📧 info@sweetdelightbakery.com
+    </p>
+
+</section>
+
+<footer>
+    <p>© 2026 Sweet Delight Bakery | Freshness You Can Taste</p>
+</footer>
+
+</body>
+</html>
